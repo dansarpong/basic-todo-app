@@ -17,7 +17,8 @@ This is a simple Todo application built using Docker for practice purposes.
 
 2. Build and run the application using Docker Compose:
     ```sh
-    docker-compose up --build
+    docker build . -t basic-todo-app
+    docker run -p 3000:3000 basic-todo-app
     ```
 
 3. Open your browser and navigate to `http://localhost:3000` to see the app in action.
